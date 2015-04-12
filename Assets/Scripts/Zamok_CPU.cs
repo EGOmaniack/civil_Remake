@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System;
 
 
-
+//я внутри матрицы
 public class Creepishe
 {
     public GameObject Zamok; //К какому замку принадлежит
