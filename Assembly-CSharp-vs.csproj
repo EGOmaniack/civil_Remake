@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\HUDFPS.cs" />
      <Compile Include="Assets\Scripts\TarPoint.cs" />
      <Compile Include="Assets\Scripts\TouchCamera.cs" />
+     <Compile Include="Assets\Scripts\UI\Home_UI.cs" />
      <Compile Include="Assets\Scripts\Water.cs" />
      <Compile Include="Assets\Scripts\Zabor_button.cs" />
      <Compile Include="Assets\Scripts\Zamok_CPU.cs" />
