@@ -51,6 +51,7 @@ public class Zada4isha
 
     public void Add_List(List<Objectishe> oni)
     {
+		this.arrtar.Clear ();
         this.arrtar = oni;
     }
 
@@ -135,14 +136,14 @@ public class Zamok_CPU : MonoBehaviour {
 	    if(arr_Zada4i.Count >0)
         {
 
-            Dotask(arr_Zada4i[0]);
+            //Dotask(arr_Zada4i[0]);
 
             foreach (Zada4isha zad in arr_Zada4i)
             {
 
                 if (zad.arrtar.Count > 0)
                 {
-                   //Dotask(zad);
+                   Dotask(zad);
                    break;
                 }
                 
@@ -174,7 +175,7 @@ public class Zamok_CPU : MonoBehaviour {
         else
         {
             anim = creep.gameObject.GetComponent<Animator>();
-           // anim.SetTrigger("hz");
+           	anim.SetTrigger("hz");
         }
     }
 
@@ -227,11 +228,11 @@ public class Zamok_CPU : MonoBehaviour {
            }
            zada4ka.Add_List(arrObjects);
 
-           zada4ka.creep1 = zapros_creepa(zada4ka.name);
-           zada4ka.creep2 = zapros_creepa(zada4ka.name);
-           zada4ka.creep3 = zapros_creepa(zada4ka.name);
+			zada4ka.creep1 = zapros_creepa(zada4ka.name);
+			zada4ka.creep2 = zapros_creepa(zada4ka.name);
+			zada4ka.creep3 = zapros_creepa(zada4ka.name);
 
-           arr_Zada4i.Add(zada4ka);   // Добавляем задачу в список готовых к исполнению задач
+			arr_Zada4i.Add(zada4ka);   // Добавляем задачу в список готовых к исполнению задач
        }
        else if (building != null)
        {

@@ -158,7 +158,7 @@ public class Creep_AI : MonoBehaviour {
 		molotokHide.GetComponent<MeshRenderer> ().enabled = true;
 	}
 
-	public void zabanim()												// Включение анимации стоящегося объекта. Запускается анимацией крипа
+	public void zabanim()												// Включение анимации строящегося объекта. Запускается анимацией крипа
 	{
 		zadObj.GetComponent<Animator> ().SetTrigger ("build");
 		zadObj.GetComponent<zaborMaster> ().masterCreep = gameObject;
@@ -172,7 +172,7 @@ public class Creep_AI : MonoBehaviour {
 
        Creepishe miInlist = cpu.arrCreeps2.Find(p => p.creep.name == gameObject.name);
        miInlist.zada4a = "Stroim";
-        miInlist.lastTask = "Stroim_zabor";
+       miInlist.lastTask = "Stroim_zabor";
         //cpu.arrCreeps2.Remove(miInlist);
         //cpu.arrCreeps.Add(miInlist);
 
